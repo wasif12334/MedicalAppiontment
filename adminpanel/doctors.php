@@ -19,9 +19,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_doctor'])) {
 // Delete doctor
 if (isset($_GET['delete'])) {
     $doctor_id = intval($_GET['delete']);
-    $con->query('DELETE FROM doctors WHERE doctor_id=' . $doctor_id);
-    header('Location: doctors.php');
-    exit();
+    if ($doctor_id > 0) {
+        $stmt = $con->prepare('DELETE FROM doctors WHERE doctor_id = ?');
+        $stmt->bind_param('i', $doctor_id);
+        if ($stmt->execute()) {
+            header('Location: doctors.php?success=1');
+        } else {
+            header('Location: doctors.php?error=1');
+        }
+        $stmt->close();
+        exit();
+    }
 }
 $doctors = $con->query('SELECT doctor_id, full_name, specialization FROM doctors ORDER BY doctor_id DESC');
 ?>
@@ -30,7 +38,7 @@ $doctors = $con->query('SELECT doctor_id, full_name, specialization FROM doctors
 <head>
     <meta charset="UTF-8">
     <title>Manage Doctors</title>
-    <link rel="stylesheet" href="/assets/styling/admin.css">
+    <link rel="stylesheet" href="../assets/styling/admin.css">
 </head>
 <body>
     <div class="navbar">Alfazal Homeo Clinic Admin Panel</div>

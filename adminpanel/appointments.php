@@ -25,7 +25,7 @@ $apps = $con->query('
 <head>
     <meta charset="UTF-8">
     <title>Manage Appointments</title>
-    <link rel="stylesheet" href="/assets/styling/admin.css">
+    <link rel="stylesheet" href="../assets/styling/admin.css">
 </head>
 <body>
     <div class="navbar">Alfazal Homeo Clinic Admin Panel</div>

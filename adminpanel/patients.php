@@ -30,7 +30,7 @@ $patients = $con->query('SELECT Patient_id, name, phone_no FROM patient ORDER BY
 <head>
     <meta charset="UTF-8">
     <title>Manage Patients</title>
-    <link rel="stylesheet" href="/assets/styling/admin.css">
+    <link rel="stylesheet" href="../assets/styling/admin.css">
 </head>
 <body>
     <div class="navbar">Alfazal Homeo Clinic Admin Panel</div>

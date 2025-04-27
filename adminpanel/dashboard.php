@@ -7,7 +7,7 @@ require_login();
 <head>
     <meta charset="UTF-8">
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="/assets/styling/admin.css">
+    <link rel="stylesheet" href="../assets/styling/admin.css">
 </head>
 <body>
     <div class="navbar">Alfazal Homeo Clinic Admin Panel</div>

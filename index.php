@@ -15,7 +15,7 @@
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#doctors" target="_blank">Our Doctors</a></li>
-                <li><a href="/patient/booking.php">Book Appiontment</a></li>
+                <li><a href="patient/booking.php">Book Appointment</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -45,43 +45,8 @@
         </section>
 
         <section id="doctors">
-            <h2 style="text-align:center; color:#29b6f6; margin-bottom:0.5rem;">Our Doctors</h2>
-            <div style="text-align:center; color:#333; margin-bottom:1.2rem; font-size:1.08rem;">Meet our expert team of homeopathic doctors</div>
-            <style>
-                .doctors-list-basic {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 1.2rem;
-                    justify-content: center;
-                }
-                .doctor-basic-item {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    min-width: 100px;
-                    max-width: 140px;
-                }
-                .doctor-basic-img {
-                    width: 60px;
-                    height: 60px;
-                    border-radius: 50%;
-                    object-fit: cover;
-                    margin-bottom: 0.4rem;
-                }
-                .doctor-basic-name {
-                    font-size: 1rem;
-                    font-weight: 600;
-                    margin-bottom: 0.1rem;
-                    text-align: center;
-                }
-                .doctor-basic-spec {
-                    font-size: 0.93rem;
-                    text-align: center;
-                }
-                @media (max-width: 700px) {
-                    .doctors-list-basic { flex-direction: column; align-items: center; }
-                }
-            </style>
+            <h2 class="doctors-title">Our Doctors</h2>
+            <div class="doctors-subtitle">Meet our expert team of homeopathic doctors</div>
             <div class="doctors-list-basic">
             <?php
             include "includes/connection.php";

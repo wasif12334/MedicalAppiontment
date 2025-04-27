@@ -56,14 +56,14 @@ if (isset($_POST['submit'])) {
     <nav class="main-nav">
         <div class="nav-container">
             <div class="logo">
-                <a href="../index.html">Alfazal Homeopathic Clinic</a>
+                <a href="../index.php">Alfazal Homeopathic Clinic</a>
             </div>
             <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../index.html#about">About</a></li>
-                <li><a href="../index.html#services">Services</a></li>
-                <li><a href="../index.html#doctors">Doctors</a></li>
-                <li><a href="../index.html#contact">Contact</a></li>
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="../index.php#about">About</a></li>
+                <li><a href="../index.php#services">Services</a></li>
+                <li><a href="../index.php#doctors">Doctors</a></li>
+                <li><a href="../index.php#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -179,7 +179,7 @@ if (isset($_POST['submit'])) {
 
         <div class="form-footer">
             <p>Need help? Contact us at <a href="tel:+1234567890">123-456-7890</a></p>
-            <a href="../index.html" class="back-link">← Back to Home</a>
+            <a href="../index.php" class="back-link">← Back to Home</a>
         </div>
     </div>
 
@@ -193,10 +193,10 @@ if (isset($_POST['submit'])) {
             <div class="footer-section">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../index.html#about">About Us</a></li>
-                    <li><a href="../index.html#services">Services</a></li>
-                    <li><a href="../index.html#doctors">Our Doctors</a></li>
+                    <li><a href="../index.php">Home</a></li>
+                    <li><a href="../index.php#about">About Us</a></li>
+                    <li><a href="../index.php#services">Services</a></li>
+                    <li><a href="../index.php#doctors">Our Doctors</a></li>
                 </ul>
             </div>
             <div class="footer-section">
