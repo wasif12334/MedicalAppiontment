@@ -17,9 +17,12 @@ body {
 
 /* Container Styles */
 .auth-container {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 400px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(44,95,45,0.08);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
 }
 
 .auth-box {
@@ -66,32 +69,30 @@ body {
 }
 
 .auth-form h2 {
-    color: #333;
-    margin-bottom: 25px;
+    color: #2c5f2d;
     text-align: center;
-    font-size: 24px;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 1.2rem;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 8px;
-    color: #555;
+    margin-bottom: 0.4rem;
+    color: #333;
     font-weight: 500;
 }
 
 .form-group input,
 .form-group select {
     width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 14px;
-    transition: border-color 0.3s ease;
-    background: white;
+    padding: 0.7rem;
+    border: 1px solid #b2b2b2;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 .form-group input:focus,
@@ -113,20 +114,19 @@ body {
 /* Button Styles */
 .auth-btn {
     width: 100%;
-    padding: 14px;
-    background: #4a90e2;
-    color: white;
+    padding: 0.9rem;
+    background: #2c5f2d;
+    color: #fff;
     border: none;
-    border-radius: 8px;
-    font-size: 16px;
+    border-radius: 5px;
+    font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.3s ease;
-    margin-top: 20px;
+    margin-top: 1rem;
 }
 
 .auth-btn:hover {
-    background: #357abd;
+    background: #256024;
 }
 
 /* Link Styles */
@@ -162,4 +162,33 @@ body {
     .form-group select {
         padding: 10px 12px;
     }
+}
+
+/* --- Portal Header Styles --- */
+.portal-header {
+    background: #2c5f2d;
+    color: #fff;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+}
+.portal-header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+.portal-header p {
+    margin: 0.5rem 0 0 0;
+    font-size: 1.1rem;
+    color: #cde6cd;
+}
+
+/* --- Switch Link Styles --- */
+.switch-link {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    color: #2c5f2d;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.98rem;
 } 

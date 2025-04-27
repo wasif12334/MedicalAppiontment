@@ -13,9 +13,7 @@ $con = mysqli_connect($servername, $username,$password, $database, "3307");
 if ($con -> connect_errno) {
   echo "Failed to connect to MySQL: " . $con -> connect_error;
   exit();
-}
-else{
- echo "Database Connected sucessfully";
+  
 }
 
 ?>
