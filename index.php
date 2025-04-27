@@ -14,8 +14,8 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="/doctor/" target="_blank">Our Doctors</a></li>
-                <li><a href="/patient/booking.html" target="_blank">Book Appiontment</a></li>
+                <li><a href="#doctors" target="_blank">Our Doctors</a></li>
+                <li><a href="/patient/booking.php">Book Appiontment</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>

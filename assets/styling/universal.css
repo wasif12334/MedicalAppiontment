@@ -1,0 +1,43 @@
+.universal-success-box {
+    max-width: 400px;
+    margin: 80px auto;
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #bbb;
+    text-align: center;
+}
+.universal-success-box h2 {
+    color: #29b6f6;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.universal-success-box p {
+    color: #333;
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+}
+.universal-extra-message {
+    color: #388e3c;
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+}
+.universal-home-link {
+    display: inline-block;
+    background: #29b6f6;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.18s;
+}
+.universal-home-link:hover {
+    background: #0288d1;
+}
+@media (max-width: 600px) {
+    .universal-success-box {
+        max-width: 98vw;
+        padding: 1.2rem 0.5rem;
+    }
+} 
