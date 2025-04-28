@@ -40,6 +40,7 @@ $patients = $con->query('SELECT Patient_id, name, phone_no FROM patient ORDER BY
         <form method="post">
             <input type="text" name="full_name" placeholder="Full Name" required>
             <input type="text" name="contact" placeholder="Phone Number" required>
+       
             <button type="submit" name="add_patient">Add Patient</button>
         </form>
         <table>

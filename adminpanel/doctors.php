@@ -6,10 +6,13 @@ include '../includes/connection.php';
 // Add doctor
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_doctor'])) {
     $name = trim($_POST['full_name'] ?? '');
+    $email = trim($_POST['email'] ?? '');
+    $password = $_POST['password'] ?? '';
     $spec = trim($_POST['specialization'] ?? '');
-    if ($name && $spec) {
-        $stmt = $con->prepare('INSERT INTO doctors (full_name, specialization) VALUES (?, ?)');
-        $stmt->bind_param('ss', $name, $spec);
+    if ($name && $email && $password && $spec) {
+        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+        $stmt = $con->prepare('INSERT INTO doctors (full_name, email, password, specialization) VALUES (?, ?, ?, ?)');
+        $stmt->bind_param('ssss', $name, $email, $hashed_password, $spec);
         $stmt->execute();
         $stmt->close();
     }
@@ -47,6 +50,8 @@ $doctors = $con->query('SELECT doctor_id, full_name, specialization FROM doctors
         <h2>Manage Doctors</h2>
         <form method="post">
             <input type="text" name="full_name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
             <input type="text" name="specialization" placeholder="Specialization" required>
             <button type="submit" name="add_doctor">Add Doctor</button>
         </form>
